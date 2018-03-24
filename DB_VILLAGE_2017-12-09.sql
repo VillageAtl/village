@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.20)
 # Database: DB_VILLAGE
-# Generation Time: 2017-11-26 01:23:14 +0000
+# Generation Time: 2017-12-09 15:16:02 +0000
 # ************************************************************
 
 
@@ -35,7 +35,7 @@ CREATE TABLE `parents` (
   `relationship` varchar(255) DEFAULT NULL,
   `child_username` varchar(255) DEFAULT NULL,
   `fav_color` varchar(255) DEFAULT NULL,
-  `submission_date` varchar(255) DEFAULT NULL,
+  `gender` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`parent_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

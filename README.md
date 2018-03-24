@@ -1,6 +1,6 @@
 # Village
 
-Village is a webapp that builds emotional intelligence in boys. 
+Village is a webapp that builds emotional intelligence in adolescent children. 
 A parent creates an account and gives their child the device so they may communicate with our chatbot. 
 At the end of the session, the app sends a transcript of the conversation to the account holder. 
 
@@ -18,28 +18,45 @@ jQuery
 HTML
 CSS
 Bootstrap
-```
-Give examples
-```
 
 ### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+* Clone repository to location of your choice
+```
+Type git clone, and then paste the URL you copied
+git clone https://github.com/NAME/REPOSITORY
+```
+* Install node libraries
+```
+sudo npm install
+```
+* Install MySQL database and import db structure from the following file in root if this repository
 
 ```
-Give the example
+DB_VILLAGE_2017-12-09.sql
 ```
-
-And repeat
+* Create a CONFIG folder in root and add config.js file into it for DB and mailer(gmail only) configuration
 
 ```
-until finished
+const config = {
+    db : {
+    	host: '127.0.0.1',
+    	user: '...', //user name to log into the database
+    	password: '...', //password to log into the database
+    	database: '...' //name 
+    	},
+
+    mailer : {
+    		service: "gmail",
+    		host: "smtp.gmail.com",
+    		auth: {
+        			user: "...", //email address for your mailer
+        			pass: "..." //password of mailer address
+     			}
+     		}
+}
+
+module.exports=config;
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 
 
 ## Built With
@@ -51,9 +68,9 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Authors
 
-* **Alex Trautman** - *Initial work* - [trautmaa](https://github.com/trautmaa)
+* **Alex Trautman** - *Founder Initial work* - [trautmaa](https://github.com/trautmaa)
+* **Nikolas Bogucharsky** - *Server DB jQuery effects Initial work Node mailer* - [niktechnopro](https://github.com/niktechnopro)
 * **Tai Chen** - *Initial work* - [mindlikewater](https://github.com/mindlikewater)
-* **Nikolas Bogucharsky** - *Initial work* - [niktechnopro](https://github.com/niktechnopro)
 * **Aasim Merchant** - *Initial work* - [135dragon](https://github.com/135dragon)
 * **Audrey Redman** - *Initial work* - [somebodie](https://github.com/somebodie)
 
@@ -61,6 +78,13 @@ See also the list of [contributors]
 (https://github.com/VillageAtl/village_frontend/graphs/contributors)
 (https://github.com/VillageAtl/village/graphs/contributors)
 who participated in this project.
+
+## Project Screenshots:
+![screenshot 1](/screenshots/screenshot1.png "project screenshot")
+![screenshot 2](/screenshots/screenshot2.png "project screenshot")
+![screenshot 3](/screenshots/screenshot3.png "project screenshot")
+![screenshot 4](/screenshots/screenshot4.png "project screenshot")
+![screenshot 5](/screenshots/screenshot5.png "project screenshot")
 
 ## License
 
